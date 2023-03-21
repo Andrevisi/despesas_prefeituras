@@ -34,7 +34,7 @@ def Busca_arq():
                 link = url + arquivo
 
                 navegador.get(link)
-                time.sleep(2)
+                time.sleep(1)
 
                 z = ZipFile((caminho.download + arquivo), "r")
                 z.extractall(caminho.original + municipio)
